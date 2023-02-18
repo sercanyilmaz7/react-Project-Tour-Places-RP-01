@@ -6,10 +6,10 @@ const Card = () => {
   console.log(data);
   return (
     <div className="card-container">
-      {data.map((item,index) => {
+      {data.map((item) => {
         const{id,title,desc,image}=item
         return (
-          <div className="cards" key={index}>
+          <div className="cards" key={id}>
             <h3 className="title">{title}</h3>
             <img className="image" src={image} alt={title} />
             <p className="text">{desc}</p>
