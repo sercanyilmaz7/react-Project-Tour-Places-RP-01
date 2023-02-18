@@ -1,0 +1,50 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.cards {
+  /* border: 2px solid red; */
+  position: relative;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: black;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.cards:hover .text {
+  /* display: block; */
+  transform: translate(0);
+}
+.title {
+  padding: 1rem 0.5rem 0.5rem;
+  font-size: 2rem;
+  color:white;
+  text-align: center;
+}
+
+.image {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  filter: grayscale(0%);
+
+}
+.image:hover{
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 1rem 1.5rem 1.5rem;
+  /* display: none; */
+  transform: translate(100%);
+  transition: all 1s ease-in-out;
+}
